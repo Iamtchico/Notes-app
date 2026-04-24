@@ -22,7 +22,7 @@ function createNoteStructure() {
     iconsDiv.className = "icons-container";
 
     let saveImg = document.createElement("img");
-    // CRITICAL: Double-check if this is .jpg, .jpeg, or .JPG
+
     saveImg.src = "save.jpg"; 
     saveImg.className = "save-btn";
 
@@ -35,8 +35,7 @@ function createNoteStructure() {
     
     noteWrapper.appendChild(inputBox);
     noteWrapper.appendChild(iconsDiv);
-    
-    // This pushes the blank one to the front
+ 
     notesContainer.prepend(noteWrapper);
     inputBox.focus();
 }
